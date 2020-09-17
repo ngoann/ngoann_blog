@@ -6,7 +6,8 @@ html {
 
 body {
   color: rgba(0, 0, 0, 0.5);
-  font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+  /* font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif; */
+  font-family: 'Quicksand', sans-serif;
   font-size: 15px;
   width: 100%;
   margin: 0 auto 30px auto;
@@ -16,7 +17,7 @@ body {
 p {
   line-height: 1.9em;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 a {
@@ -128,7 +129,8 @@ a:hover, a:active {
   list-style: none;
   padding: 18px 30px;
   float: left;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
 }
 .page-top .nav li {
   position: relative;

@@ -11,7 +11,7 @@ tags:
 
 `Dockerfile`
 
-```bash
+```dockerfile
 FROM ruby:2.7.1
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
@@ -30,6 +30,7 @@ CMD ["/app/docker_bash.sh"]
 ```
 
 `docker-compose.yml`
+
 ```yml
 version: "3"
 services:
