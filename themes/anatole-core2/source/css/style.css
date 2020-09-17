@@ -197,7 +197,7 @@ a:hover, a:active {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: -1px;
   line-height: 1;
   margin: 0;
 }
@@ -672,6 +672,12 @@ a.btn {
 .page_404 {
   text-align: center;
   padding-top: 50px;
+}
+
+.sidebar .logo-title .title img {
+  border-radius: 50%;
+  border: 1px solid #464646;
+  padding: 2px;
 }
 
 @media screen and (max-width: 960px) {

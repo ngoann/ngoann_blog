@@ -26,7 +26,7 @@ Và thế là `NN-Blog` ra đời. :D :D
 Hiện tại phiên bản NodeJS mình đang dùng là `v12.18.3`.
 Mình khuyên là các bạn nên cài NodeJS `>= 12.0`
 
-```sh
+```bash
 nn@ngoann:~/ngoann_blog$ node -v
 v12.18.3
 ```
@@ -41,26 +41,26 @@ Cái này thì thôi mình không hướng dẫn các bạn đăng ký, các b�
 
 Vì **Hexo** cung cấp `command-line` nên ở đây mình sẽ thêm flag `-g` để có thể sử dụng mà `cli` **Hexo** cung cấp ở mức `global` (hiểu nôm na là dùng ở chỗ nào trên máy cũng được)
 
-```sh
+```bash
 $ npm install hexo-cli -g
 ```
 
 Khi cài xong để tạo project mới bạn chỉ cần chạy lệnh
 
-```sh
+```bash
 $ hexo init ngoann_blog
 ```
 
 Sau đó cài `dependencies` cho project
 
-```sh
+```bash
 $ cd ngoann_blog
 $ npm install
 ```
 
 Xong xuôi rồi thì bật server lên thôi
 
-```sh
+```bash
 $ hexo server
 ```
 
@@ -80,7 +80,7 @@ Khi chọn được theme ưng con mắt rồi thì các bạn thực hiện nh�
 
 ***(Tùy vào mỗi theme sẽ có cách cài đặt khác, bạn nên vào trang github theme đó đọc hướng dẫn nhé)***
 
-```sh
+```bash
 $ cd ngoann_blog
 $ git clone https://github.com/mrcore/hexo-theme-Anatole-Core.git themes/anatole-core
 $ npm install hexo-renderer-pug --save
@@ -90,7 +90,7 @@ Tiếp theo là mở file `_config.yml` rồi sửa `theme: anatole-core` để 
 
 OK, restart server nào.
 
-```sh
+```bash
 $ hexo server
 ```
 
@@ -100,7 +100,7 @@ Thôi phần kết quả này mình không chụp ảnh nữa... các bạn tự
 
 Ở trên `documentation` của `Hexo` hướng dẫn như thế này?
 
-```sh
+```bash
 $ hexo new [layout] <title>
 ```
 
@@ -109,7 +109,7 @@ $ hexo new [layout] <title>
 
 Mình ví dụ luôn nhá, mình sẽ tạo 1 bài viết có tiêu đề là **"NN-Blog được xây dựng như thế nào?"** thì lệnh tạo sẽ là:
 
-```sh
+```bash
 nn@ngoann:~/ngoann_blog$ hexo new post "NN-Blog được xây dựng như thế nào?"
 INFO  Validating config
 INFO  Created: ~/ngoann_blog/source/_posts/NN-Blog-duoc-xay-dung-nhu-the-nao.md
@@ -117,7 +117,7 @@ INFO  Created: ~/ngoann_blog/source/_posts/NN-Blog-duoc-xay-dung-nhu-the-nao.md
 
 Đấy, khi chạy xong nó sẽ tự tạo ra file `N-Blog-duoc-xay-dung-nhu-the-nao.md` có nội dung là:
 
-```
+```yml
 ---
 title: NN-Blog được xây dựng như thế nào?
 date: 2020-09-16 21:10:32
@@ -129,7 +129,7 @@ Dưới dấu `---` thứ 2 là phần nội dung và sẽ sử dụng cú pháp
 
 Để mình ví dụ nhá
 
-```
+```yml
 ---
 title: NN-Blog được xây dựng như thế nào?
 date: 2020-09-16 21:10:32
@@ -154,7 +154,7 @@ Ví dụ: github username của mình là `ngoann` thì mình sẽ tạo repo c�
 
 Sau đó mở file `_config.yml` lên và sửa thành như sau
 
-```sh
+```yml
 deploy:
     type: git
     repo: https://github.com/ngoann/ngoann.github.io.git
@@ -168,7 +168,7 @@ $ npm install hexo-deployer-git -save
 
 Khi cài xong chạy tiến hành `build` và `deploy` lên github thôi
 
-```
+```bash
 $ hexo generate
 $ hexo deploy
 ```
