@@ -2,7 +2,7 @@ extends partial/layout
 
 block site_title
     if is_current('tags')
-        !=  "标签 · " + config.title
+        !=  "Tags · " + config.title
     else
         != page.title + " · " + config.title
 

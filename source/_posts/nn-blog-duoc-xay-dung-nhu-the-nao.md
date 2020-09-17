@@ -2,6 +2,8 @@
 title: NN-Blog được xây dựng như thế nào?
 date: 2020-09-16 21:10:32
 tags:
+  - Technical
+  - Blog
 ---
 
 Phải nói như nào nhỉ...
